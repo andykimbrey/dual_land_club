@@ -14,7 +14,12 @@ class MemberTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.member',
-		'app.ownership'
+		'app.ownership',
+		'app.land',
+		'app.colour',
+		'app.land_colour',
+		'app.set',
+		'app.land_set'
 	);
 
 /**

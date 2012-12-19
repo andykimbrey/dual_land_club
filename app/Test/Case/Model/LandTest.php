@@ -14,7 +14,12 @@ class LandTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.land',
-		'app.ownership'
+		'app.ownership',
+		'app.member',
+		'app.colour',
+		'app.land_colour',
+		'app.set',
+		'app.land_set'
 	);
 
 /**

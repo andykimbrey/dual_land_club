@@ -17,7 +17,7 @@
 			<?php echo $this->Html->link($ownership['Member']['name'], array('controller' => 'members', 'action' => 'view', $ownership['Member']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($ownership['Land']['Name'], array('controller' => 'lands', 'action' => 'view', $ownership['Land']['id'])); ?>
+			<?php echo $this->Html->link($ownership['Land']['id'], array('controller' => 'lands', 'action' => 'view', $ownership['Land']['id'])); ?>
 		</td>
 		<td><?php echo h($ownership['Ownership']['number_undecked']); ?>&nbsp;</td>
 		<td><?php echo h($ownership['Ownership']['number_decked']); ?>&nbsp;</td>

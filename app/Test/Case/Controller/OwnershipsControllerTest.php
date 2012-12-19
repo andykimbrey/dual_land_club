@@ -15,7 +15,11 @@ class OwnershipsControllerTest extends ControllerTestCase {
 	public $fixtures = array(
 		'app.ownership',
 		'app.member',
-		'app.land'
+		'app.land',
+		'app.colour',
+		'app.land_colour',
+		'app.set',
+		'app.land_set'
 	);
 
 }

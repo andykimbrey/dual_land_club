@@ -6,6 +6,13 @@
 class MemberFixture extends CakeTestFixture {
 
 /**
+ * Table name
+ *
+ * @var string
+ */
+	public $table = 'member';
+
+/**
  * Fields
  *
  * @var array

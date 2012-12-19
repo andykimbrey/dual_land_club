@@ -1,19 +1,19 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Ownership Model
+ * LandSet Model
  *
- * @property Member $Member
+ * @property Set $Set
  * @property Land $Land
  */
-class Ownership extends AppModel {
+class LandSet extends AppModel {
 
 /**
  * Use table
  *
  * @var mixed False or table name
  */
-	public $useTable = 'ownership';
+	public $useTable = 'land_set';
 
 /**
  * Validation rules
@@ -21,7 +21,7 @@ class Ownership extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'member_id' => array(
+		'set_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -51,9 +51,9 @@ class Ownership extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Member' => array(
-			'className' => 'Member',
-			'foreignKey' => 'member_id',
+		'Set' => array(
+			'className' => 'Set',
+			'foreignKey' => 'set_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

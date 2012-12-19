@@ -15,7 +15,11 @@ class MembersControllerTest extends ControllerTestCase {
 	public $fixtures = array(
 		'app.member',
 		'app.ownership',
-		'app.land'
+		'app.land',
+		'app.colour',
+		'app.land_colour',
+		'app.set',
+		'app.land_set'
 	);
 
 }

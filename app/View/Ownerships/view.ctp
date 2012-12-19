@@ -13,7 +13,7 @@
 		</dd>
 		<dt><?php echo __('Land'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($ownership['Land']['Name'], array('controller' => 'lands', 'action' => 'view', $ownership['Land']['id'])); ?>
+			<?php echo $this->Html->link($ownership['Land']['id'], array('controller' => 'lands', 'action' => 'view', $ownership['Land']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Number Undecked'); ?></dt>

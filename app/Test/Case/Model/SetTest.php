@@ -1,11 +1,11 @@
 <?php
-App::uses('Ownership', 'Model');
+App::uses('Set', 'Model');
 
 /**
- * Ownership Test Case
+ * Set Test Case
  *
  */
-class OwnershipTest extends CakeTestCase {
+class SetTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,12 +13,12 @@ class OwnershipTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.set',
+		'app.land',
 		'app.ownership',
 		'app.member',
-		'app.land',
 		'app.colour',
 		'app.land_colour',
-		'app.set',
 		'app.land_set'
 	);
 
@@ -29,7 +29,7 @@ class OwnershipTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Ownership = ClassRegistry::init('Ownership');
+		$this->Set = ClassRegistry::init('Set');
 	}
 
 /**
@@ -38,7 +38,7 @@ class OwnershipTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Ownership);
+		unset($this->Set);
 
 		parent::tearDown();
 	}

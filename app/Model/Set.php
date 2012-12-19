@@ -1,25 +1,25 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Member Model
+ * Set Model
  *
- * @property Ownership $Ownership
+ * @property Land $Land
  */
-class Member extends AppModel {
+class Set extends AppModel {
 
 /**
  * Use table
  *
  * @var mixed False or table name
  */
-	public $useTable = 'member';
+	public $useTable = 'set';
 
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'name';
+	public $displayField = 'Name';
 
 /**
  * Validation rules
@@ -27,7 +27,7 @@ class Member extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'name' => array(
+		'Name' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
 				//'message' => 'Your custom message here',
@@ -42,23 +42,25 @@ class Member extends AppModel {
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**
- * hasMany associations
+ * hasAndBelongsToMany associations
  *
  * @var array
  */
-	public $hasMany = array(
-		'Ownership' => array(
-			'className' => 'Ownership',
-			'foreignKey' => 'member_id',
-			'dependent' => false,
+	public $hasAndBelongsToMany = array(
+		'Land' => array(
+			'className' => 'Land',
+			'joinTable' => 'land_set',
+			'foreignKey' => 'set_id',
+			'associationForeignKey' => 'land_id',
+			'unique' => 'keepExisting',
 			'conditions' => '',
 			'fields' => '',
 			'order' => '',
 			'limit' => '',
 			'offset' => '',
-			'exclusive' => '',
 			'finderQuery' => '',
-			'counterQuery' => ''
+			'deleteQuery' => '',
+			'insertQuery' => ''
 		)
 	);
 

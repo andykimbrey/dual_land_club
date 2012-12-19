@@ -1,16 +1,16 @@
 <?php
 /**
- * LandFixture
+ * SetFixture
  *
  */
-class LandFixture extends CakeTestFixture {
+class SetFixture extends CakeTestFixture {
 
 /**
  * Table name
  *
  * @var string
  */
-	public $table = 'land';
+	public $table = 'set';
 
 /**
  * Fields
